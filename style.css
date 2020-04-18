@@ -1,0 +1,559 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora';
+    background-color: beige;
+}
+
+.wrapper {
+    height: 100vh;
+}
+
+.top-bar {
+    width: 80%;
+    height: 50px;
+    margin: 20px auto;
+}
+
+.logo {
+    width: 20%;
+    float: left;
+}
+
+.logo img {
+    width: 150px;
+    margin: 8px auto;
+}
+
+.menu-bar {
+    width: 60%;
+    float: left;
+    text-align: center;
+}
+
+.menu-bar ul li {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    margin: 15px 20px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.active,
+.menu-bar ul li:hover {
+    border-top: 2px solid crimson;
+}
+
+.burger {
+    width: 30px;
+    height: 70px;
+    display: none;
+}
+
+.burger_icon {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.search-box {
+    width: 20%;
+    float: right;
+}
+
+.input-search {
+    margin: 10px auto;
+    display: inline-flex;
+    border: 1px solid black;
+}
+
+.input-search input {
+    float: right;
+    padding: 5px;
+    box-shadow: none;
+    outline: none;
+    border: 0;
+    background: transparent;
+}
+
+.hero {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hero-text {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.hero-text h1 {
+    margin: 132px 0 50px 70px;
+    line-height: 40px;
+}
+
+.hero-text p {
+    padding-left: 70px;
+    line-height: 25px;
+}
+
+.hero-banner {
+    width: 49%;
+    height: 100%;
+    float: right;
+    text-align: center;
+}
+
+.hero-banner img {
+    width: 100%;
+    margin: 150px auto;
+}
+
+.wrapper small {
+    margin-left: 210px;
+}
+
+.wrapper small b {
+    margin-right: 50px;
+}
+
+.social-icons {
+    width: 200px;
+    height: 390px;
+    left: -70px;
+    top: 150px;
+    position: absolute;
+    border-top-right-radius: 275px 309px;
+    border-bottom-right-radius: 328px 627px;
+}
+
+.social-icons ul {
+    display: block;
+    color: black;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.social-icons ul li {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.social-icons ul li fa {
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.social-icons ul li:hover {
+    color: crimson;
+    cursor: pointer;
+}
+
+.content-box {
+    background-color: beige;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    display: inline-flex;
+}
+
+.menu img {
+    height: 35px;
+    margin: 20px 0 0 110px;
+    cursor: pointer;
+}
+
+.menu a {
+    padding: 5px 20px;
+    background: crimson;
+    color: white;
+    font-size: 16px;
+    border: 0;
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    cursor: pointer;
+}
+
+.banner-text {
+    width: 80%;
+    color: black;
+    margin: 16% auto 0;
+    text-align: center;
+}
+
+.banner-text h2 {
+    margin-top: 50px;
+    font-size: 64px;
+}
+
+.banner-text p {
+    font-size: 14px;
+    margin: 20px 0 50px;
+}
+
+.banner-text a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid crimson;
+    display: block;
+    padding: 10px;
+    width: 180px;
+    margin: auto;
+    background: crimson;
+    transition: 0.5s;
+}
+
+.banner-text a:hover {
+    background: transparent;
+    color: black;
+}
+
+.content-box {
+    background: beige;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 210px;
+}
+
+h1::after {
+    content: "";
+    background: crimson;
+    display: block;
+    height: 3px;
+    width: 120px;
+    margin: 20px auto 50px;
+}
+
+.login {
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+}
+
+.form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: white;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    /* border-radius: 30px;*/
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+
+/* social icons from login page */
+
+.social_icons {
+    margin: 30px auto;
+    text-align: center;
+    background: white;
+}
+
+.fa {
+    text-align: center;
+    padding: 0 10px;
+    background: white;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+.fa:hover {
+    cursor: pointer;
+}
+
+.input-group {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+    background: white;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: white;
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.check-box {
+    margin: 30px 10px 30px 0;
+}
+
+span {
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+
+#login {
+    left: 450px;
+}
+
+#register {
+    left: 50px;
+}
+
+
+/*   Gallery */
+
+.gallery {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    margin: 5% auto 0;
+    box-sizing: border-box;
+}
+
+.image-box {
+    margin: 0 1%;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: 0.5s;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.image-box:hover {
+    flex-basis: 50%;
+}
+
+.image-box-active {
+    flex-basis: 50%;
+}
+
+.gallery:hover .image-box-active {
+    flex-basis: 0;
+}
+
+.image-box:nth-child(1):hover {
+    flex-basis: 50%;
+}
+
+@media (max-width: 1230px) {
+    .logo img {
+        width: 100px;
+        margin: 8px auto;
+    }
+    .image-box img {
+        width: 100%;
+        height: 200%;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+    .menu-bar ul li {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+}
+
+@media (max-width: 770px) {
+    .logo img {
+        width: 60px;
+        margin: 8px auto;
+    }
+    .image-box img {
+        width: 100%;
+        height: 200%;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+    .hero {
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .hero-text {
+        width: 50%;
+        height: 100%;
+        float: left;
+        font-size: 10px;
+    }
+    .hero-text h1 {
+        margin: 80px 0 50px 0px;
+        line-height: 20px;
+    }
+    .hero-text p {
+        padding-left: 0px;
+        line-height: 25px;
+    }
+    .hero-banner {
+        width: 50%;
+        height: 100%;
+        float: right;
+        text-align: center;
+    }
+    .hero-banner img {
+        width: 100%;
+        margin: 15px auto;
+    }
+    .wrapper small {
+        margin-left: 50px;
+    }
+    .wrapper small b {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .fp_logo {
+        display: none;
+    }
+    .logo img {
+        width: 60px;
+        margin: 8px auto;
+    }
+    .image-box img {
+        width: 100%;
+        height: 200%;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+    .hero {
+        width: 50%;
+        height: 80%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .hero-text {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+    .hero-text h1 {
+        margin: 30px 35px 0px;
+        line-height: 40px;
+    }
+    .hero-text p {
+        padding-left: 4px;
+        line-height: 20px;
+    }
+    .hero-banner {
+        width: 49%;
+        height: 10%;
+        float: right;
+    }
+    .hero-banner img {
+        width: 100%;
+        margin: 150px auto;
+    }
+    .wrapper small {
+        margin-left: 50px;
+    }
+    .wrapper small b {
+        margin-right: 50px;
+    }
+    .form-box {
+        width: 240px;
+        height: 480px;
+        position: relative;
+        margin: 6% auto;
+        background: white;
+        padding: 18px;
+        overflow: hidden;
+    }
+    .input-group {
+        top: 180px;
+        position: absolute;
+        width: 180px;
+        transition: 0.5s;
+        background: white;
+    }
+    .input-field {
+        width: 100%;
+        padding: 10px 0;
+        margin: 5px 0;
+        border-left: 0;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 1px solid #999;
+        outline: none;
+        background: white;
+    }
+    .submit-btn {
+        width: 75%;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        background: linear-gradient(to right, #ff105f, #ffad06);
+        border: 0;
+        outline: none;
+        border-radius: 30px;
+    }
+}

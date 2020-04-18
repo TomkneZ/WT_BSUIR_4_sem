@@ -1,0 +1,331 @@
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    color: #2B2A2C;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 1.2rem 0;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* nav */
+
+.nav {
+    display: flex;
+    height: 100%;
+}
+
+@media (max-width: 1100px) {
+    .nav {
+        display: none;
+    }
+}
+
+.nav_link {
+    /*  padding: 0.66rem 2rem;*/
+    margin-left: 2rem;
+    position: relative;
+    font-size: 0.93rem;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    /*  border: 2px solid transparent;*/
+    border-radius: 20px;
+}
+
+.nav_link:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    z-index: 1;
+    transition: width 0.2s linear;
+}
+
+.nav_link:hover:after {
+    width: 100%;
+}
+
+
+/* intro */
+
+.intro {}
+
+.intro_inner {
+    display: flex;
+    padding-bottom: 120px;
+    padding-top: 100px;
+    background: /* url("images/kim-kanye.jpg") right
+        bottom no-repeat;*/
+}
+
+.intro_content {
+    width: 50%;
+}
+
+.intro_title {
+    font-size: 3rem;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.intro_subtitle {
+    font-size: 2.13rem;
+    color: black;
+}
+
+.intro_text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: crimson;
+    margin-top: 30px;
+}
+
+.intro_photo {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.social {
+    display: flex;
+    margin-bottom: 42px;
+}
+
+.social_link {
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.social_link:hover {
+    color: crimson;
+}
+
+
+/* Posts */
+
+.all_posts {
+    padding: 2.8rem 0;
+    margin-left: auto;
+}
+
+.posts_nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3.4rem;
+}
+
+.posts_nav-link {
+    margin: 2rem 1.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+}
+
+.posts_nav-link:hover {
+    color: crimson;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+.portfolio_col {
+    flex-basis: 30%;
+    padding: 0 1rem;
+}
+
+.post {
+    overflow: hidden;
+}
+
+.post_image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.post_content {
+    padding: 1rem 0.8rem;
+}
+
+.post_cat {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: crimson;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.post_title {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.06rem;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+}
+
+.post_title:hover {
+    color: crimson;
+}
+
+.post_date {}
+
+
+/* News */
+
+.news {
+    margin-top: 7rem;
+    flex-wrap: wrap;
+    margin-bottom: 7rem;
+}
+
+.news_header {
+    text-align: center;
+    margin-bottom: 3.6rem;
+}
+
+.news_title {
+    font-size: 2rem;
+    color: black;
+    font-weight: 700;
+}
+
+.news_text {
+    color: crimson;
+    font-weight: 700;
+    padding: 1.8rem;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+.articles_col {
+    width: 33.33333%;
+    padding: 0 1rem;
+}
+
+.articles_item {
+    margin-bottom: 2rem;
+}
+
+.articles_header {
+    position: relative;
+    margin-bottom: 1.35rem;
+}
+
+.articles_content {}
+
+.articles_photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.articles_title {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.articles_title:hover {
+    color: crimson;
+}
+
+.articles_cat {
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    color: crimson;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.articles_text {
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 300;
+    line-height: 2;
+}
+
+.footer {
+    padding: 1.35rem 0;
+    background-color: black;
+}
+
+
+/* Footer */
+
+.footer_nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+}
+
+.footer_nav-link {
+    margin: 0 1.5rem;
+    font-size: 0.8rem;
+    color: white;
+    text-decoration: none;
+}
+
+.footer_nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+@media (max-width: 400px) {
+    .portfolio_col {
+        flex-basis: 100%;
+    }
+}
