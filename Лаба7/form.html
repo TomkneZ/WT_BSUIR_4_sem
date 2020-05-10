@@ -1,0 +1,32 @@
+<html lang="ru">
+
+<head>
+    <title>Laba5</title>
+    <meta charset="utf-8"> </head>
+
+<body>
+    <form action="/verify_captcha.php" method="post" enctype="multipart/form-data">
+        <fieldset> From Name:
+            <br>
+            <input type="text" name="name" required>
+            <br> To Email:
+            <br>
+            <input type="email" name="email" required>
+            <br> Theme:
+            <br>
+            <input type="text" name="theme" required>
+            <br> Message:
+            <br>
+            <textarea rows="10" cols="45" name="message" required></textarea>
+            <p> <img src='/captcha.php' id='captcha-image'> <a href="javascript:void(0);" onclick="document.getElementById('captcha-image').src = 'captcha.php';">
+                    Refresh captcha
+                </a> </p>
+            <p> <span>Enter captcha:</span>
+                <input type="text" name="<?php echo $captcha_code; ?>"> </p>
+            <p>
+                <input type="submit" name="submit_form" value="Send"> </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
