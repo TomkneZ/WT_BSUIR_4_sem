@@ -2,7 +2,6 @@
 
 class CaptchaVerify
 {
-
     private $captcha_value = '';
     private $captcha_field = '';
     private $answer_time = '';
@@ -22,7 +21,7 @@ class CaptchaVerify
 
     private function error_msg($message)
     {
-        $_SESSION[$_SERVER['REMOTE_ADDR']] ++;
+        ++$_SESSION[$_SERVER['REMOTE_ADDR']];
         exit($message);
     }
 
@@ -30,27 +29,28 @@ class CaptchaVerify
     {
         $this->session_read();
 
-        if (isset($_POST['submit_form']) && !empty($this->captcha_value) && !empty($this->captcha_field) && !empty($this->answer_time))
-        {
+        if (isset($_POST['submit_form']) && !empty($this->captcha_value) && !empty($this->captcha_field) && !empty($this->answer_time)) {
             $this->current_time = strtotime(date('d-m-Y H:i:s'));
 
-            if ($this->current_time - $this->answer_time < 6)
+            if ($this->current_time - $this->answer_time < 6) {
                 $this->error_msg('Too fast!');
-            if ($_POST[$this->captcha_field] == '')
+            }
+            if ($_POST[$this->captcha_field] == '') {
                 $this->error_msg('Robot!');
+            }
 
             if (md5(md5($_POST[$this->captcha_field])) == $this->captcha_value) {
-                 $mail = $_POST['email'];
-    $theme = $_POST['theme'];
-    $message = $_POST['message'];
-    if (mail($mail, $theme, $message)) {
-        echo 'Mail was sent seccessfully.';
-            }
-            }
-
-            else
+                $mail = $_POST['email'];
+                $theme = $_POST['theme'];
+                $message = $_POST['message'];
+                if (mail($mail, $theme, $message)) {
+                    echo 'Mail was sent seccessfully.';
+                }
+            } else {
                 $this->error_msg('Wrong captcha!');
+            }
+        } else {
+            $this->error_msg('Hacker!');
         }
-        else $this->error_msg('Hacker!');
     }
 }
