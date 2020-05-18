@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(isset($_POST['submit'])){
-    if (($_POST['captcha'] != '') && md5(($_POST['captcha'] === $_SESSION['rand_code']))){
+    if (($_POST['captcha'] != '') && md5(($_POST['captcha']) === $_SESSION['rand_code'])){
        $mail = $_POST['email'];
                 $theme = $_POST['theme'];
                 $message = $_POST['message'];
